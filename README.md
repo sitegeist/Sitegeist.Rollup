@@ -36,7 +36,10 @@ Can be instantiated in Fusion via
 
 ```
 thing = Sitegeist.Rollup:Object {
+    // name of the class to create
     @className = 'Vendor\\Example\\Thing'
+    
+    // named constructor arguments
     foo = 'hello'
     bar = 124
 }
