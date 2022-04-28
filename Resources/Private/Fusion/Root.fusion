@@ -1,0 +1,3 @@
+prototype(Sitegeist.Rollup:Object) {
+    @class = 'Sitegeist\\Rollup\\FusionObjects\\ObjectImplementation'
+}

@@ -1,0 +1,20 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "sitegeist/rollup",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": "> 8.0",
+        "neos/fusion": "~7.0 || ~8.0 || dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sitegeist\\Rollup\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Sitegeist.Rollup"
+        }
+    }
+}
