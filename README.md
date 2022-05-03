@@ -50,7 +50,7 @@ be specified aswell.
 
 ```
 other = Sitegeist.Rollup:Object {
-    className = 'Vendor\\Example\\SizeEnum'
+    className = 'Vendor\\Example\\Thing'
     factoryMethod = 'from'
     arguments.0 = "XS"
 }
