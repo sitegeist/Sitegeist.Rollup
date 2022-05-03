@@ -32,16 +32,36 @@ class Thing
 }
 ```
 
-Can be instantiated in Fusion via
+Can be instantiated in Fusion via. If no `factoryMethod` is defined
+the arguments are passed to the constructor of the class. 
 
 ```
 thing = Sitegeist.Rollup:Object {
-    // name of the class to create
-    @className = 'Vendor\\Example\\Thing'
-    
-    // named constructor arguments
-    foo = 'hello'
-    bar = 124
+    className = 'Vendor\\Example\\Thing'    
+    arguments {
+        foo = 'hello'
+        bar = 124
+    }  
+}
+```
+
+To instantiate value objects or backed enums the `factoryMethod` can 
+be specified aswell.
+
+```
+other = Sitegeist.Rollup:Object {
+    className = 'Vendor\\Example\\SizeEnum'
+    factoryMethod = 'from'
+    arguments.0 = "XS"
+}
+
+stuff = Sitegeist.Rollup:Object {
+    className = 'Vendor\\Example\\SizeEnum'
+    factoryMethod = 'fromArray'
+    arguments.0 = Neos.Fusion:DataStructure {
+        foo = 'hello'
+        bar = 124
+    }
 }
 ```
 
